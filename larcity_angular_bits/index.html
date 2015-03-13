@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div class="home">
+    <h1>Welcome to LarCity's {{ site.vars.shortname }}!</h1>
+
+    This page will serve as documentation for our {{ site.vars.shortname }} toolkit (for want of a better term). To get started, a few answers...
+
+    <h2>So, why did we make {{ site.vars.shortname }}?</h2>
+
+    At {{ site.vars.company_name }}, we could go on for <em>days</em> about how much we love to make things. In any trade,
+    if you practice your trade often, toolkits are a by-product of your work. What we mean is, we couldn't help it if we tried - {{ site.vars.shortname }} is 
+    a by product of the work we do and love.
+    
+    <h2>What is {{ site.vars.shortname }}?</h2>
+    {{ site.vars.shortname }} is a set of controllers, filters and services that our team has come to use frequently across our projects. <strong>While they are not 
+        quite plugin-ready yet</strong>, they present a model for accomplishing these tasks with AngularJS. Mostly, we're just super-excited that tasks which we 
+        would pain-stakingly write pure JS or JQuery libraries to accomplish in the fast, listening for click events and such, can be accomplished 
+        using AngularJS in a number of awesome ways depending on what makes sense for scoping, routing etc. of your app, AND can be extended like we've done with {{ site.vars.shortname }}
+        and re-used easily across applications with the same Architecture. 
+
+    <h2>What is AngularJS?</h2>
+    Simply put, it's an awesome library from Google. It essentially brings MVC to the user interface in an elegant way - there are a number of other libraries 
+    that do this by the way, but AngularJS right now, works great for our team at {{ site.vars.company_name }}. <a href="https://angularjs.org" target="_blank">Click for more on AngularJS</a>.
+
+    <p />
+    <p>Ok, enough Q/A.</p>
+    
+    <div class="block-bar text-centered">
+        <a href="{{ "/using_angularbits/" | prepend : site.baseurl }}" class="btn btn-lg btn-success">Using {{ site.vars.shortname }}</a>
+    </div>
+    
+</div>
