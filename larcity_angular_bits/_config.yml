@@ -9,13 +9,15 @@ twitter_username: larcityapps
 github_username:  larcitylab
 
 ## PRODUCTION CONFIG
-url: "http://larcity.com/angularbits/" # the base hostname & protocol for your site
-baseurl: "" # the subpath of your site, e.g. /blog/
-destination: "./en"
+url: "http://larcity.com" # the base hostname & protocol for your site
+baseurl: "/angularbits" # the subpath of your site, e.g. /blog/
+
 ## DEVELOPMENT CONFIG
 #url: "http://localhost"
-#baseurl: "/router/dev-docs/en"
-#destination: ../dev-docs/en
+#baseurl: ""
+#destination: ./dev-en
+
+destination: "./en"
 
 vars:
     shortname: AngularBits

@@ -1,0 +1,32 @@
+<!-- Wait Overlay - prevent user action -->
+<div ng-show="BusyModal && BusyModal.type==='wait'" class="ng-hide">
+    <div class="ng-modal-overlay">
+    </div>
+    <div class="ng-modal-body {{BusyModal.class}}">
+        <div class="ng-modal-message" style="margin: 0 auto; text-align: center;">
+            <span style="display: block;" ng-bind-html="BusyModal.message"></span>
+            <i class="fa fa-gear fa-spin"></i>
+        </div>
+    </div>
+</div>
+
+<div ng-show="PageLoadModal" class="ng-hide">
+    <div class="ng-modal-overlay">
+    </div>
+    <div class="ng-modal-body {{PageLoadModal.class}}">
+        <div class="ng-modal-message" style="margin: 0 auto; text-align: center;">
+            <span style="display: block;" ng-bind-html="PageLoadModal.message"></span>
+            <i class="fa fa-gear fa-spin"></i>
+        </div>
+    </div>
+</div>
+
+<!-- Working overlay - user can do stuff -->
+<div ng-show="BusyModal && BusyModal.type !== 'wait' && BusyModal.type !== 'error'" class="ng-hide">
+    <div class="ng-modal-body {{BusyModal.class}}">
+        <div class="ng-modal-message" style="margin: 0 auto; text-align: center; padding: 1em;  background-color: rgba(0,0,0,0.5); border-radius: 10px; max-width: 300px;">
+            <span style="display: block;" ng-bind-html="BusyModal.message"></span>
+            <i class="fa fa-gear fa-spin"></i>
+        </div>
+    </div>
+</div>

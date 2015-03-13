@@ -1,0 +1,22 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 27, 2015, 7:09:31 AM
+    Author     : uchilaka
+*/
+.flush-form .form-control:not(.exclude), .flush-form .selectize-input {
+    box-shadow: none;
+    border-color: transparent;
+}
+.flush-form .form-group:not(.noline) {
+    border-bottom: 1px solid #ccc;
+}
+.flush-form .form-group label {
+    margin-left: 10px;
+}
+.flush-form .form-error {
+    padding-left: 10px;
+}

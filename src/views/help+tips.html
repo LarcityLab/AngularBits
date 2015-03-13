@@ -1,0 +1,21 @@
+<!-- /ng-views/help+tips.html -->
+<div id="HelpDialog" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header {{Help.has_error ? 'error' : ''}}">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" ng-bind-html="Help.message" style="font-weight: bold;"></h4>
+            </div>
+            <div class="modal-body" ng-include="Help.view">
+            </div>
+            <div class="modal-footer">
+                <span ng-repeat="Action in Help.actions">
+                    <button class="btn btn-default ng-hide" ng-show="!Action.url" ng-click="closeThenDo(Action)">{{Action.label}}</button>
+                    <a ng-href="{{Action.url}}" ng-show="Action.url" class="btn btn-default ng-hide">{{Action.label}}</a>
+                </span>
+                <button ng-show="Help.lighthouse && !Help.hideDefaultButton" class="ng-hide btn btn-primary" data-dismiss="modal">Back to {{Help.lighthouse.name}}</button>
+                <button ng-show="!Help.lighthouse && !Help.hideDefaultButton" class="ng-hide btn btn-primary" data-dismiss="modal">Got It</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->    
